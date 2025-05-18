@@ -305,7 +305,7 @@ def main(cfg: DictConfig):
 
     # 3) TODO: instantiate & train the agent
     agent = DQNAgent(env, **cfg.agent)
-    agent.traincfg.num_frames
+    agent.train(cfg.num_frames)
 
 
 if __name__ == "__main__":
